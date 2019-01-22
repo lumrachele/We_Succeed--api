@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_01_22_160626) do
   create_table "user_activities", force: :cascade do |t|
     t.integer "user_id"
     t.integer "activity_id"
+    t.integer "goal_id"
     t.integer "points"
     t.string "note"
     t.datetime "created_at", null: false
