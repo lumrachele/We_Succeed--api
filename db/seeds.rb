@@ -24,6 +24,14 @@ Goal.create(name: "vamos a la costco", value: 40, user_id: 3)
 Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true)
 Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true)
 
+UserActivity.create(user_id: 1, activity_id: 1, goal_id: 1, points: 20, note: "fillerzzzz")
+UserActivity.create(user_id: 1, activity_id: 2, goal_id: 3, points: 50, note: "fillerzzzz")
+UserActivity.create(user_id: 2, activity_id: 3, goal_id: 5, points: 52, note: "fillerzzzz")
+UserActivity.create(user_id: 3, activity_id: 1, goal_id: 7, points: 56, note: "fillerzzzz")
+UserActivity.create(user_id: 3, activity_id: 2, goal_id: 8, points: 66, note: "fillerzzzz")
+
+
+
 # make new UserActivity to make the reached goals met?
 UserActivity.create(user_id: 1, activity_id: 1, goal_id: 2,  points: 6, note: "squatzzz" )
 UserActivity.create(user_id: 1, activity_id: 2, goal_id: 2, points: 6, note: "zzzsalmonzzz" )
