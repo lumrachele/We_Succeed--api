@@ -7,7 +7,8 @@ class Api::V1::GoalsController < ApplicationController
   end
 
   def update
-    @goal = Goal.update(goal_params)
+    @goal = Goal.find(params[:id])
+    @goal.update(goal_params)
     render json: @goal, status: :ok
   end
 
