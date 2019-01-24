@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users
       resources :activities
       resources :goals
+      resources :user_activities
     end
   end
 end
