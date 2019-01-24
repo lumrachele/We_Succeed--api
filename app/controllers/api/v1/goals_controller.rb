@@ -1,2 +1,20 @@
 class Api::V1::GoalsController < ApplicationController
+
+
+  def show
+    @goal = Goal.find(params[:id])
+    render json: @goal, status: :ok
+  end
+
+  def update
+    @goal = Goal.update(goal_params)
+    render json: @goal, status: :ok
+  end
+
+  private
+
+  def goal_params
+    params.require(:goal).permit(:id, :name, :value, :reached, :current)
+  end
+
 end
