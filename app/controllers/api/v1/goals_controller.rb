@@ -21,7 +21,7 @@ class Api::V1::GoalsController < ApplicationController
   private
 
   def goal_params
-    params.require(:goal).permit(:id, :name, :value, :reached, :current)
+    params.require(:goal).permit(:id, :name, :value, :reached, :current, :user_id)
   end
 
 end
