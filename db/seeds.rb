@@ -7,41 +7,43 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
-u1 = User.create(name: "Satya", email: "satya")
-u2 = User.create(name: "Tony", email: "tony")
-u3 = User.create(name: "Rachel", email: "rachel")
+u1 = User.create(name: "Satya", email: "satya@gmail.com")
+u2 = User.create(name: "Tony", email: "tony@gmail.com")
+u3 = User.create(name: "Rachel", email: "rachel@gmail.com")
 
 Activity.create(name: "workout")
 Activity.create(name: "meal")
 Activity.create(name: "mindfulness")
 
-Goal.create(name: "vamos a la playa", value: 20, user_id: 1, reached: true, current: false)
-Goal.create(name: "vamos a la costco", value: 30, user_id: 1, reached: false, current: true)
-Goal.create(name: "take over WeWork", value: 50, user_id: 1, reached: true, current: false)
+# Goal.create(name: "vamos a la playa", value: 20, user_id: 1, reached: true, current: false)
+Goal.create(name: "Fried Chicken Melt", value: 30, user_id: 1, reached: false, current: true)
+# Goal.create(name: "take over WeWork", value: 50, user_id: 1, reached: true, current: false)
 
-Goal.create(name: "vamos a la costco", value: 30, user_id: 2, reached: false, current: true)
-Goal.create(name: "take over WeWork", value: 50, user_id: 2, reached: true, current: false)
+Goal.create(name: "Get sammich", value: 30, user_id: 2, reached: false, current: true)
+# Goal.create(name: "take over WeWork", value: 50, user_id: 2, reached: true, current: false)
 
-Goal.create(name: "vamos a la costco", value: 40, user_id: 3, reached: false, current: true)
-Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true, current: false)
-Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true, current: false)
+Goal.create(name: "Go to the Spa", value: 30 , user_id: 3, reached: false, current: true)
+# Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true, current: false)
+# Goal.create(name: "take over WeWork", value: 50, user_id: 3, reached: true, current: false)
 
-UserActivity.create(user_id: 1, activity_id: 1, goal_id: 1, points: 20, note: "fillerzzzz")
-UserActivity.create(user_id: 1, activity_id: 2, goal_id: 3, points: 50, note: "fillerzzzz")
-UserActivity.create(user_id: 2, activity_id: 3, goal_id: 5, points: 52, note: "fillerzzzz")
-UserActivity.create(user_id: 3, activity_id: 1, goal_id: 7, points: 56, note: "fillerzzzz")
-UserActivity.create(user_id: 3, activity_id: 2, goal_id: 8, points: 66, note: "fillerzzzz")
-
+# UserActivity.create(user_id: 1, activity_id: 1, goal_id: 1, points: 20, note: "fillerzzzz")
+# UserActivity.create(user_id: 1, activity_id: 2, goal_id: 3, points: 50, note: "fillerzzzz")
+# UserActivity.create(user_id: 2, activity_id: 3, goal_id: 5, points: 52, note: "fillerzzzz")
+# UserActivity.create(user_id: 3, activity_id: 1, goal_id: 7, points: 56, note: "fillerzzzz")
+# UserActivity.create(user_id: 3, activity_id: 2, goal_id: 8, points: 66, note: "fillerzzzz")
+# spa
+# get sammich
+# fried chicken melt
 
 
 # make new UserActivity to make the reached goals met?
-UserActivity.create(user_id: 1, activity_id: 1, goal_id: 2,  points: 6, note: "squatzzz" )
-UserActivity.create(user_id: 1, activity_id: 2, goal_id: 2, points: 6, note: "zzzsalmonzzz" )
-UserActivity.create(user_id: 1, activity_id: 3, goal_id: 2, points: 6, note: "meditatezzz" )
-UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 7, note: "salad" )
-UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 1, note: "soupz" )
-UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 1, note: "some chicken" )
-UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 8, note: "said hullo" )
-UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 3, note: "said hiiii" )
-UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 4, note: "said heyyy" )
-UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 6, note: "said byeeee" )
+# UserActivity.create(user_id: 1, activity_id: 1, goal_id: 2,  points: 6, note: "squatzzz" )
+# UserActivity.create(user_id: 1, activity_id: 2, goal_id: 2, points: 6, note: "zzzsalmonzzz" )
+# UserActivity.create(user_id: 1, activity_id: 3, goal_id: 2, points: 6, note: "meditatezzz" )
+# UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 7, note: "salad" )
+# UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 1, note: "soupz" )
+# UserActivity.create(user_id: 2, activity_id: 2, goal_id: 4, points: 1, note: "some chicken" )
+# UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 8, note: "said hullo" )
+# UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 3, note: "said hiiii" )
+# UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 4, note: "said heyyy" )
+# UserActivity.create(user_id: 3, activity_id: 3, goal_id: 6, points: 6, note: "said byeeee" )
