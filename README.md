@@ -2,7 +2,7 @@
 
 This Rails application is the backend for WeSucceed. It provides access to the necessary API endpoints and communicates with the PostgreSQL Database. <a href=https://vimeo.com/333179786>Demo Video</a>
 
-Frontend: [Weegle Frontend Repository](https://github.com/lumrachele/we_succeed--front_end)
+Frontend: [WeSucceed Frontend Repository](https://github.com/lumrachele/we_succeed--front_end)
 
 <h2>Contents</h2>
 
@@ -22,7 +22,7 @@ This app uses Ruby version 2.5.3. This Rails application was created using ```ra
 
 # <h2>Installation</h2>
 
-To get started with this app, simply fork and clone this repository, as well as the [frontend repository](https://github.com/lumrachele/we-type-front-end). Set up the front end as per the instructions in that repository. Remember to ```bundle install``` and run ```rails db:create && rails db:migrate && rails db:seed``` to create and initialize the database. Double check that you have PostgreSQL running on your computer. To run, enter the command ```rails s``` in your terminal and navigate to ```http://localhost:3000``` or whatever port number you would like to indicate.
+To get started with this app, simply fork and clone this repository, as well as the [frontend repository](https://github.com/lumrachele/we_succeed--front_end). Set up the front end as per the instructions in that repository. Remember to ```bundle install``` and run ```rails db:create && rails db:migrate && rails db:seed``` to create and initialize the database. Double check that you have PostgreSQL running on your computer. To run, enter the command ```rails s``` in your terminal and navigate to ```http://localhost:3000``` or whatever port number you would like to indicate.
 
 # <h2>Models</h2>
 
